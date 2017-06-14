@@ -89,7 +89,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #f5f5f5;\n  margin: 0px;\n  padding: 0px;\n  font-family: helvetica neue, helvetica, arial, sans-serif;\n  font-size: 16px;\n}\nbody header {\n  padding: 20px;\n  background-color: #238fdf;\n}\nbody header span {\n  color: white;\n  font-size: 2rem;\n}\nbody main {\n  padding-top: 30px;\n  background-color: #f5f5f5;\n}\nbody main .request-list {\n  background-color: white;\n  border-top: 2px solid #e2e2e2;\n  border-bottom: 2px solid #e2e2e2;\n  padding: 20px 20px;\n}\nbody main .main-title {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 40px;\n}\nbody main .main-title h2 {\n  margin: 0px;\n  padding: 0px;\n}\nbody main table {\n  width: 100%;\n  border-collapse: collapse;\n  text-align: left;\n  margin-bottom: 30px;\n}\nbody main table td,\nbody main table th {\n  padding: 20px!important;\n  border-bottom: 2px solid #e2e2e2;\n}\nbody main form {\n  padding: 30px 15px;\n}\nbody main form #err {\n  display: none;\n}\nbody main button:focus {\n  outline: none!important;\n  -webkit-appearance: none!important;\n}\nbody footer {\n  text-align: center;\n  padding: 50px 0px 80px;\n  background-color: #f5f5f5;\n}\nbody footer h3,\nbody footer p {\n  color: #686868;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #f5f5f5;\n  margin: 0px;\n  padding: 0px;\n  font-family: helvetica neue, helvetica, arial, sans-serif;\n  font-size: 16px;\n}\nbody header {\n  padding: 20px;\n  background-color: #238fdf;\n}\nbody header span {\n  color: white;\n  font-size: 2rem;\n}\nbody main {\n  padding-top: 30px;\n  background-color: #f5f5f5;\n}\nbody main .request-list {\n  background-color: white;\n  border-top: 2px solid #e2e2e2;\n  border-bottom: 2px solid #e2e2e2;\n  padding: 20px 20px;\n}\nbody main .main-title {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 40px;\n}\nbody main .main-title h2 {\n  margin: 0px;\n  padding: 0px;\n}\nbody main table {\n  width: 100%;\n  border-collapse: collapse;\n  text-align: left;\n  margin-bottom: 30px;\n}\nbody main table td,\nbody main table th {\n  padding: 20px!important;\n  border-bottom: 2px solid #e2e2e2;\n}\nbody main form {\n  padding: 30px 15px;\n}\nbody main form .modal-buttons {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\nbody main form #err {\n  display: none;\n}\nbody main button:focus {\n  outline: none!important;\n  -webkit-appearance: none!important;\n}\nbody footer {\n  text-align: center;\n  padding: 50px 0px 80px;\n  background-color: #f5f5f5;\n}\nbody footer h3,\nbody footer p {\n  color: #686868;\n}\n", ""]);
 
 	// exports
 
@@ -22790,14 +22790,18 @@
 	                            'Заполните пожалуйста все поля'
 	                        ),
 	                        _react2['default'].createElement(
-	                            'button',
-	                            { type: 'button', id: 'closeButton', ref: 'close', className: 'btn btn-default ', 'data-dismiss': 'modal' },
-	                            'Закрыть'
-	                        ),
-	                        _react2['default'].createElement(
-	                            'button',
-	                            { type: 'submit', id: 'requestButton', className: 'btn btn-default go' },
-	                            'Отправить'
+	                            'div',
+	                            { className: 'modal-buttons' },
+	                            _react2['default'].createElement(
+	                                'button',
+	                                { type: 'button', id: 'closeButton', ref: 'close', className: 'btn btn-default ', 'data-dismiss': 'modal' },
+	                                'Закрыть'
+	                            ),
+	                            _react2['default'].createElement(
+	                                'button',
+	                                { type: 'submit', id: 'requestButton', className: 'btn btn-default go' },
+	                                'Отправить'
+	                            )
 	                        )
 	                    )
 	                )

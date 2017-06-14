@@ -35,8 +35,11 @@ const ModalForm = React.createClass({
                                     <textarea className="form-control" ref='comment' rows="3"  id="comment" placeholder="Ведите ваш коментарий"></textarea>
                                 </div>
                                 <div className="alert alert-danger err" role="alert" ref="err" id="err">Заполните пожалуйста все поля</div>
-                                <button type="button" id='closeButton' ref='close' className="btn btn-default " data-dismiss="modal">Закрыть</button>
-                                <button type="submit" id='requestButton'  className="btn btn-default go" >Отправить</button>
+                                <div className="modal-buttons">
+                                    <button type="submit" id='requestButton'  className="btn btn-default go" >Отправить</button>
+                                    <button type="button" id='closeButton' ref='close' className="btn btn-default " data-dismiss="modal">Закрыть</button>
+                                </div>
+
                             </form>
                         </div>
                     </div>
