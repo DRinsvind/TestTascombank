@@ -22629,75 +22629,75 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/MacUser/Desktop/react/requsits/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/MacUser/Desktop/react/requsits/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	'use strict';
+	"use strict";
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	var _react = __webpack_require__(187);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var RequestList = _react2['default'].createClass({
-	    displayName: 'RequestList',
+	var RequestList = _react2["default"].createClass({
+	    displayName: "RequestList",
 
 	    render: function render() {
 	        var requests = this.props.requests;
 
-	        return _react2['default'].createElement(
-	            'table',
+	        return _react2["default"].createElement(
+	            "table",
 	            null,
-	            _react2['default'].createElement(
-	                'tbody',
+	            _react2["default"].createElement(
+	                "tbody",
 	                null,
-	                _react2['default'].createElement(
-	                    'tr',
+	                _react2["default"].createElement(
+	                    "tr",
 	                    null,
-	                    _react2['default'].createElement(
-	                        'th',
+	                    _react2["default"].createElement(
+	                        "th",
 	                        null,
-	                        'ID'
+	                        "ID"
 	                    ),
-	                    _react2['default'].createElement(
-	                        'th',
+	                    _react2["default"].createElement(
+	                        "th",
 	                        null,
-	                        'Имя'
+	                        "Имя"
 	                    ),
-	                    _react2['default'].createElement(
-	                        'th',
+	                    _react2["default"].createElement(
+	                        "th",
 	                        null,
-	                        'Комментарий'
+	                        "Комментарий"
 	                    ),
-	                    _react2['default'].createElement(
-	                        'th',
+	                    _react2["default"].createElement(
+	                        "th",
 	                        null,
-	                        'Дата'
+	                        "Дата"
 	                    )
 	                ),
 	                requests.map(function (request) {
-	                    return _react2['default'].createElement(
-	                        'tr',
-	                        { key: request.id },
-	                        _react2['default'].createElement(
-	                            'td',
+	                    return _react2["default"].createElement(
+	                        "tr",
+	                        { key: request.id, className: "request" },
+	                        _react2["default"].createElement(
+	                            "td",
 	                            null,
 	                            request.id
 	                        ),
-	                        _react2['default'].createElement(
-	                            'td',
+	                        _react2["default"].createElement(
+	                            "td",
 	                            null,
 	                            request.name
 	                        ),
-	                        _react2['default'].createElement(
-	                            'td',
+	                        _react2["default"].createElement(
+	                            "td",
 	                            null,
 	                            request.comment
 	                        ),
-	                        _react2['default'].createElement(
-	                            'td',
+	                        _react2["default"].createElement(
+	                            "td",
 	                            null,
 	                            request.date
 	                        )
@@ -22708,8 +22708,8 @@
 	    }
 	});
 
-	exports['default'] = RequestList;
-	module.exports = exports['default'];
+	exports["default"] = RequestList;
+	module.exports = exports["default"];
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/MacUser/Desktop/react/requsits/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "RequestList.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -22786,17 +22786,17 @@
 	                        ),
 	                        _react2['default'].createElement(
 	                            'div',
-	                            { className: 'alert alert-danger', role: 'alert', ref: 'err', id: 'err' },
+	                            { className: 'alert alert-danger err', role: 'alert', ref: 'err', id: 'err' },
 	                            'Заполните пожалуйста все поля'
 	                        ),
 	                        _react2['default'].createElement(
 	                            'button',
-	                            { type: 'button', id: 'closeButton', ref: 'close', className: 'btn btn-default', 'data-dismiss': 'modal' },
+	                            { type: 'button', id: 'closeButton', ref: 'close', className: 'btn btn-default ', 'data-dismiss': 'modal' },
 	                            'Закрыть'
 	                        ),
 	                        _react2['default'].createElement(
 	                            'button',
-	                            { type: 'submit', id: 'requestButton', className: 'btn btn-default' },
+	                            { type: 'submit', id: 'requestButton', className: 'btn btn-default go' },
 	                            'Отправить'
 	                        )
 	                    )
