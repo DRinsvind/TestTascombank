@@ -33,3 +33,8 @@ Second Tab: starting `kharma test`
 ```sh
 $ npm test
 ```
+# About native-js version
+- The version of the application where I used only the native javascript located in `./native js /`.
+- To test the application, open `./native js /index.html`.
+- In the `./native js /script.js` file, there are comments (Russian) describing each function.
+- I am used jquery cdn only for Bootstrap components.
